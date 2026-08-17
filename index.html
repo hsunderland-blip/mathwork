@@ -40,19 +40,21 @@
         <p>Test your math skills!</p>
         <button onclick="startGame()">Play</button>
     </div>
-
+z        
     <script>
         function startGame() {
             let answer = prompt("What is 7 × 8?");
             
             if (answer == "56") {
-                alert("Correct! 🎉");
+    alert("Correct! 🎉");
+    document.getElementById("lockedGames").style.display = "inline-block";
+} 
             } else {
                 alert("Not quite! The answer is 56.");
             }
         }
     </script>
-<div class="game">
+<div class="game" id="lockedGames" style="display: none;">
     <h2>⛏️ Eaglercraft</h2>
     <p>Play Eaglercraft in your browser.</p>
 
