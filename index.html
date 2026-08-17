@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mathwork</title>
-</head>
-<body>
-    <h1>Welcome to Mathwork!</h1>
-    <p>My website is working!</p>
+    <title>Mathwork Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f2f2f2;
+            padding: 40px;
+        }
 
-    <button onclick="alert('Hello!')">Click me</button>
+        h1 {
+            font-size: 40px;
+        }
+
+        .game {
+            display: inline-block;
+            background: white;
+            padding: 25px;
+            margin: 15px;
+            border-radius: 12px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎮 Mathwork Games</h1>
+    <p>Welcome! Choose a game below.</p>
+
+    <div class="game">
+        <h2>🧮 Math Challenge</h2>
+        <p>Test your math skills!</p>
+        <button onclick="startGame()">Play</button>
+    </div>
+
+    <script>
+        function startGame() {
+            let answer = prompt("What is 7 × 8?");
+            
+            if (answer == "56") {
+                alert("Correct! 🎉");
+            } else {
+                alert("Not quite! The answer is 56.");
+            }
+        }
+    </script>
+
 </body>
 </html>
